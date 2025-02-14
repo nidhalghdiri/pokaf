@@ -62,11 +62,11 @@ const Header = () => {
         {/* Desktop Nav (RTL) */}
         <nav dir="rtl" className="hidden md:flex space-x-reverse space-x-6">
           {[
-            { href: "#home", label: "الرئيسية" },
-            { href: "#about", label: "من نحن" },
-            { href: "#brands", label: "العلامات التجارية" },
-            { href: "#products", label: "المنتجات" },
-            { href: "#contact", label: "اتصل بنا" },
+            { href: "/", label: "الرئيسية" },
+            { href: "/about", label: "من نحن" },
+            { href: "/brands", label: "العلامات التجارية" },
+            { href: "/products", label: "المنتجات" },
+            { href: "/contact", label: "اتصل بنا" },
           ].map((item) => (
             <Link
               key={item.href}
@@ -90,11 +90,11 @@ const Header = () => {
               <SheetTitle className="sr-only">Menu</SheetTitle>
               <nav className="flex flex-col space-y-4 text-right">
                 {[
-                  { href: "#home", label: "الرئيسية" },
-                  { href: "#about", label: "من نحن" },
-                  { href: "#brands", label: "العلامات التجارية" },
-                  { href: "#products", label: "المنتجات" },
-                  { href: "#contact", label: "اتصل بنا" },
+                  { href: "/home", label: "الرئيسية" },
+                  { href: "/about", label: "من نحن" },
+                  { href: "/brands", label: "العلامات التجارية" },
+                  { href: "/products", label: "المنتجات" },
+                  { href: "/contact", label: "اتصل بنا" },
                 ].map((item) => (
                   <Link
                     key={item.href}
