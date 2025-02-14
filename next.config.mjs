@@ -1,5 +1,5 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
+// next.config.mjs
+export default {
   reactStrictMode: true,
-  // Add other configurations
+  // Add any other configurations you need here
 };
