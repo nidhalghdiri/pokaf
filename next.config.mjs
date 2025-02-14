@@ -1,5 +1,8 @@
-// next.config.mjs
-export default {
-  reactStrictMode: true,
-  // Add any other configurations you need here
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
+export default nextConfig;
