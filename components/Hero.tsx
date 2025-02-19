@@ -3,9 +3,12 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const images = [
-  "/images/slide1.jpg",
-  "/images/slide2.jpg",
-  "/images/slide3.jpg",
+  "/images/slide1.jpeg",
+  "/images/slide2.jpeg",
+  "/images/slide3.jpeg",
+  "/images/slide4.jpeg",
+  "/images/slide5.jpeg",
+  "/images/slide6.jpeg",
 ]; // ✅ Add your actual image paths
 
 const Hero = () => {
@@ -14,13 +17,13 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000); // ✅ Change every 4 seconds
+    }, 5000); // ✅ Change every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="relative w-full h-[50vh] flex items-center justify-center text-center overflow-hidden">
+    <section className="relative w-full sm:h-[75vh] h-[50vh] flex items-center justify-center text-center overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0">
         {images.map((img, index) => (
@@ -33,7 +36,7 @@ const Hero = () => {
             transition={{ duration: 1, ease: "easeInOut" }}
           />
         ))}
-        <div className="absolute inset-0 bg-black/50"></div>{" "}
+        <div className="absolute inset-0 bg-black/30"></div>{" "}
         {/* ✅ Dark Overlay */}
       </div>
 
