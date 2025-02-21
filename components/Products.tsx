@@ -32,7 +32,7 @@ const ProductSlider = () => {
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 4 }, // ✅ 4 items on large screens
+            1280: { slidesPerView: 4 },
           }}
           className="w-full max-w-6xl mx-auto"
         >
@@ -42,7 +42,7 @@ const ProductSlider = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-auto object-cover rounded-lg"
+                  className="w-full cursor-pointer h-auto object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-300"
                 />
                 <h3 className="text-xl font-semibold mt-4 text-gray-700">
                   {product.name}

@@ -64,9 +64,9 @@ const Header = () => {
           {[
             { href: "/", label: "الرئيسية" },
             { href: "/about", label: "من نحن" },
-            { href: "/brands", label: "العلامات التجارية" },
-            { href: "/products", label: "المنتجات" },
-            { href: "/contact", label: "اتصل بنا" },
+            { href: "/brands", label: "علاماتنا التجارية" },
+            { href: "/products", label: "منتجاتنا" },
+            { href: "/contact", label: "تواصل معنا" },
           ].map((item) => (
             <Link
               key={item.href}

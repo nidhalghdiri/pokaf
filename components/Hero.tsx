@@ -23,7 +23,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full sm:h-[75vh] h-[50vh] flex items-center justify-center text-center overflow-hidden">
+    <section className="relative mt-16 w-full sm:h-[75vh] h-[35vh] flex items-center justify-center text-center overflow-hidden">
       {/* Background Image Slider */}
       <div className="absolute inset-0">
         {images.map((img, index) => (
@@ -33,10 +33,10 @@ const Hero = () => {
             style={{ backgroundImage: `url(${img})` }}
             initial={{ opacity: 0 }}
             animate={{ opacity: index === currentImage ? 1 : 0 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
           />
         ))}
-        <div className="absolute inset-0 bg-black/30"></div>{" "}
+        <div className="absolute inset-0 bg-black/20"></div>{" "}
         {/* ✅ Dark Overlay */}
       </div>
 
@@ -46,7 +46,7 @@ const Hero = () => {
           className="sm:text-5xl text-2xl font-cairo font-extrabold drop-shadow-md"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           key={currentImage} // ✅ Re-animate on image change
         >
           شركة إنما الدار للصناعات ذ.م.م
@@ -63,12 +63,12 @@ const Hero = () => {
         </motion.p>
 
         <motion.button
-          className="mt-8 px-8 py-3 bg-[#bd1e2e] text-white font-semibold rounded-xl shadow-lg hover:bg-white-300 transition-all duration-300"
+          className="mt-8 px-8 py-4 bg-[#bd1e2e] font-cairo text-white font-bold rounded-xl shadow-lg hover:bg-white-300 transition-all duration-300"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          Explore Our Brands
+          إكتشف منتجاتنا
         </motion.button>
       </div>
     </section>
