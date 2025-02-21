@@ -19,7 +19,9 @@ const ProductSlider = () => {
   return (
     <section id="products" className="py-12 bg-gray-100">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-8 text-gray-800">منتجاتنا</h2>
+        <h2 className="text-4xl font-cairo font-bold mb-8 text-gray-800">
+          منتجاتنا
+        </h2>
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           spaceBetween={20}

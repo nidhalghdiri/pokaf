@@ -50,7 +50,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
+            src="/images/logo.png"
             alt="Enma Al Dar Logo"
             width={150}
             height={50}
@@ -71,7 +71,7 @@ const Header = () => {
             <Link
               key={item.href}
               href={item.href}
-              className="text-black hover:text-blue-500 font-medium transition-colors duration-300"
+              className="text-black hover:text-[#bd1e2e] font-cairo font-semibold transition-colors duration-300"
             >
               {item.label}
             </Link>
@@ -99,7 +99,7 @@ const Header = () => {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium hover:text-blue-500 transition-colors duration-300"
+                    className="text-lg font-cairo font-medium hover:text-[#bd1e2e] transition-colors duration-300"
                     onClick={() => setOpen(false)}
                   >
                     {item.label}

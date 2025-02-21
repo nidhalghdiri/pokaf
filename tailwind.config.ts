@@ -52,7 +52,8 @@ export default {
         },
       },
       fontFamily: {
-        marinefont: ["MarineFont", "sans-serif"],
+        // marinefont: ["MarineFont", "sans-serif"],
+        cairo: ["var(--font-cairo)"],
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -43,7 +43,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto text-white px-6">
         <motion.h1
-          className="sm:text-5xl text-2xl font-extrabold drop-shadow-md"
+          className="sm:text-5xl text-2xl font-cairo font-extrabold drop-shadow-md"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -53,7 +53,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="mt-4 sm:text-lg text-sm text-gray-200"
+          className="mt-4 sm:text-lg font-cairo text-sm text-gray-200"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
