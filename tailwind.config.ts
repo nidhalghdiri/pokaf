@@ -52,7 +52,6 @@ export default {
         },
       },
       fontFamily: {
-        // marinefont: ["MarineFont", "sans-serif"],
         cairo: ["var(--font-cairo)"],
       },
       borderRadius: {

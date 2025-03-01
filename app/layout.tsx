@@ -6,9 +6,9 @@ import "./styles/globals.css";
 import { Cairo } from "next/font/google";
 
 const cairo = Cairo({
-  subsets: ["latin"], // Specify the subsets you need
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"], // Specify the weights you need
-  variable: "--font-cairo", // Optional: Define a CSS variable
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-cairo",
 });
 
 export const metadata: Metadata = {
