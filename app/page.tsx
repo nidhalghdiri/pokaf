@@ -1,4 +1,4 @@
-import AboutUs from "@/components/About";
+import { AboutUs, MissionVisionSection } from "@/components/About";
 import Brands from "@/components/Brands";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -13,6 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <AboutUs />
+      <MissionVisionSection />
       <Products />
       <Contact />
       <Footer />

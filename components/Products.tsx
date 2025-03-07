@@ -226,7 +226,7 @@ const ProductSlider = () => {
                       thumbs={{ swiper: thumbsSwiper }}
                       className="h-full"
                     >
-                      {selectedProduct.images.map((image, index) => (
+                      {selectedProduct?.images.map((image, index) => (
                         <SwiperSlide key={index}>
                           <img
                             src={image}
